@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #faf7f2;
+    --text-color: #2e1f15;
+    --primary-color: #6f4e37;
+    --accent-color: #d4a373;
+    --card-bg: #ffffff;
+    --border-color: #e6dfd5;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+body {
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 25px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    min-height: 80vh;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #5c4a3c;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.hero-image-placeholder {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee-cup-graphic {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: #f0e6d6;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed var(--accent-color);
+}
+
+.cup {
+    position: relative;
+    width: 110px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-top: 20px;
+}
+
+.handle {
+    position: absolute;
+    right: -25px;
+    top: 15px;
+    width: 30px;
+    height: 40px;
+    border: 8px solid var(--primary-color);
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+}
+
+.plate {
+    width: 140px;
+    height: 12px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.menu-section {
+    padding: 80px 8%;
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #7d6b5d;
+    margin-bottom: 50px;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background-color: var(--bg-color);
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(111, 78, 55, 0.05);
+}
+
+.menu-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.menu-card p {
+    font-size: 15px;
+    color: #5c4a3c;
+}
+
+.price {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.about-section {
+    padding: 80px 8%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-color);
+}
+
+.about-container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-container h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: var(--primary-color);
+}
+
+.about-container p {
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #5c4a3c;
+}
+
+.footer {
+    background-color: var(--text-color);
+    color: #f5eedf;
+    padding: 60px 8% 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-info, .footer-hours {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-info h3, .footer-hours h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.footer-info p, .footer-hours p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(245, 238, 223, 0.1);
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 5%;
+    }
+    
+    .nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-image-placeholder {
+        margin-top: 20px;
+    }
+
+    .menu-section, .about-section {
+        padding: 50px 5%;
+    }
+}
