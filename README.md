@@ -4,7 +4,8 @@ A modern, responsive web landing page built with semantic HTML and CSS. Develope
 
 ### 👨‍💻 Developer Details
 * **Name:** Ishant Khare
-
+* **Domain:** Web Development
+* **Company:** Oasis Infobyte
 ### 🎯 Objective
 To design and structure a clean, visually appealing landing page using foundational frontend web technologies.
 
